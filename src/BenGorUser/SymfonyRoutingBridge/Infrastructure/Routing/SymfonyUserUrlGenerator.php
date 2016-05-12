@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the BenGorUser library.
+ * This file is part of the BenGorUser package.
  *
  * (c) Beñat Espiña <benatespina@gmail.com>
  * (c) Gorka Laucirica <gorka.lauzirika@gmail.com>
@@ -12,7 +12,7 @@
 
 namespace BenGorUser\SymfonyRoutingBridge\Infrastructure\Routing;
 
-use BenGor\User\Domain\Model\UserUrlGenerator;
+use BenGorUser\User\Domain\Model\UserUrlGenerator;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 
 /**

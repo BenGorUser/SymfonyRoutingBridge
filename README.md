@@ -1,11 +1,11 @@
 # SymfonyRoutingBridge
-> Adapter to make User compatible with Doctrine ORM
+> Adapter to make User compatible with Symfony routing
 
 [![Build Status](https://travis-ci.org/BenGorUser/SymfonyRoutingBridge.svg?branch=master)](https://travis-ci.org/BenGorUser/SymfonyRoutingBridge)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/BenGorUser/SymfonyRoutingBridge/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/BenGorUser/SymfonyRoutingBridge/?branch=master)
-[![Total Downloads](https://poser.pugx.org/bengoruser/symfony-routing-bridge/downloads)](https://packagist.org/packages/bengoruser/symfony-routing-bridge/)
-[![Latest Stable Version](https://poser.pugx.org/bengoruser/symfony-routing-bridge//v/stable.svg)](https://packagist.org/packages/bengoruser/symfony-routing-bridge/)
-[![Latest Unstable Version](https://poser.pugx.org/bengoruser/symfony-routing-bridge//v/unstable.svg)](https://packagist.org/packages/bengoruser/symfony-routing-bridge/)
+[![Total Downloads](https://poser.pugx.org/bengor-user/symfony-routing-bridge/downloads)](https://packagist.org/packages/bengor-user/symfony-routing-bridge/)
+[![Latest Stable Version](https://poser.pugx.org/bengor-user/symfony-routing-bridge//v/stable.svg)](https://packagist.org/packages/bengor-user/symfony-routing-bridge/)
+[![Latest Unstable Version](https://poser.pugx.org/bengor-user/symfony-routing-bridge//v/unstable.svg)](https://packagist.org/packages/bengor-user/symfony-routing-bridge/)
 
 ##Requirements
 PHP >= 5.5
@@ -13,7 +13,7 @@ PHP >= 5.5
 ##Installation
 The easiest way to install this component is using [Composer][6]
 ```bash
-$ composer require bengoruser/symfony-routing-bridge
+$ composer require bengor-user/symfony-routing-bridge
 ```
 
 ##Documentation
@@ -52,7 +52,7 @@ This library is created by:
 **@gorkalaucirica** - [gorka.lauzirika@gmail.com](mailto:gorka.lauzirika@gmail.com)
 
 ##Licensing Options
-[![License](https://poser.pugx.org/bengoruser/symfony-routing-bridge//license.svg)](https://github.com/BenGorUser/SymfonyRoutingBridge/blob/master/LICENSE)
+[![License](https://poser.pugx.org/bengor-user/symfony-routing-bridge//license.svg)](https://github.com/BenGorUser/SymfonyRoutingBridge/blob/master/LICENSE)
 
 [1]: http://www.phpspec.net/
 [2]: http://symfony.com/doc/current/contributing/code/index.html
