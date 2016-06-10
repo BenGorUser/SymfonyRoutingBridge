@@ -1,1 +1,0 @@
-# SymfonyRoutingBridge documentation
