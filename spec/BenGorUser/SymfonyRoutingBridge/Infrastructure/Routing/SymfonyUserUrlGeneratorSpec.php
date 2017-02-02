@@ -26,7 +26,7 @@ class SymfonyUserUrlGeneratorSpec extends ObjectBehavior
 {
     function let(UrlGeneratorInterface $urlGenerator)
     {
-        $this->beConstructedWith($urlGenerator);
+        $this->beConstructedWith($urlGenerator, 'bengor_user_user_homepage');
     }
 
     function it_is_initializable()
@@ -42,9 +42,11 @@ class SymfonyUserUrlGeneratorSpec extends ObjectBehavior
     function it_generates(UrlGeneratorInterface $urlGenerator)
     {
         $urlGenerator->generate(
-            'bengor_user_user_homepage', [], UserUrlGenerator::ABSOLUTE_URL
+            'bengor_user_user_homepage',
+            ['token' => 'the-token'],
+            UrlGeneratorInterface::ABSOLUTE_URL
         )->shouldBeCalled()->willReturn('/');
 
-        $this->generate('bengor_user_user_homepage')->shouldReturn('/');
+        $this->generate('the-token')->shouldReturn('/');
     }
 }

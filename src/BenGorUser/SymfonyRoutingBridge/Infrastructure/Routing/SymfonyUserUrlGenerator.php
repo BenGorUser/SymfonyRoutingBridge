@@ -30,20 +30,33 @@ final class SymfonyUserUrlGenerator implements UserUrlGenerator
     private $urlGenerator;
 
     /**
+     * The path name.
+     *
+     * @var string
+     */
+    private $pathName;
+
+    /**
      * Constructor.
      *
      * @param UrlGeneratorInterface $anUrlGenerator The URL generator
+     * @param string                $aPathName      The path name
      */
-    public function __construct(UrlGeneratorInterface $anUrlGenerator)
+    public function __construct(UrlGeneratorInterface $anUrlGenerator, $aPathName)
     {
         $this->urlGenerator = $anUrlGenerator;
+        $this->pathName = $aPathName;
     }
 
     /**
      * {@inheritdoc}
      */
-    public function generate($aName, $parameters = [], $aReferenceType = self::ABSOLUTE_URL)
+    public function generate($aToken)
     {
-        return $this->urlGenerator->generate($aName, $parameters, $aReferenceType);
+        return $this->urlGenerator->generate(
+            $this->pathName,
+            ['token' => $aToken],
+            UrlGeneratorInterface::ABSOLUTE_URL
+        );
     }
 }
